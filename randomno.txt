@@ -1,0 +1,32 @@
+Build a program that generates a random number and challenges the user to guess it. the program should prompt the user to input their guess, compare it to the generated number.
+
+Functions:
+
+new_game():
+Generates a new random number between 1 and 100.
+Clears the guess entry field.
+Updates the feedback label to prompt the user for a guess.
+check_guess():
+Attempts to convert the user's input in the guess entry to an integer.
+Checks the guess against the random number:
+If too low, updates the feedback label with a hint.
+If too high, updates the feedback label with a hint.
+If correct, congratulates the user, displays a success message box, and starts a new game.
+In case of invalid input (not a number), updates the feedback label with an error message.
+
+GUI Elements:
+
+root: The main application window with title "Number Guessing Game".
+prompt_label: Label prompting the user to enter their guess.
+guess_entry: Entry field for the user to input their guess.
+guess_button: Button labeled "Guess" that triggers the check_guess() function.
+feedback_label: Label that provides feedback to the user based on their guess.
+new_game_button: Button labeled "New Game" that triggers the new_game() function.
+
+Overall Flow:
+
+The program starts a new game by generating a random number.
+The user enters their guess in the entry field.
+Clicking the "Guess" button triggers the check_guess() function.
+The function validates the user's input and compares the guess with the random number.
+Based on the comparison, the function updates the feedback label and potentially starts a new game or displays a success message.
